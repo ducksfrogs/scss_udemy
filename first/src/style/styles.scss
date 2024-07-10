@@ -1,18 +1,19 @@
 // flex items => children
-body{
-    display: flex;
-    flex-wrap: wrap;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-section{
-    width: 10rem;
-    background-color: lightgray;
-    padding: 1.5rem;
-    margin: 1rem;
-    color: white;
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: 16px;
+    line-height: 1.7;
+    color: #777;
 }
 
-div.content{
-    background-color: navy;
-    padding: 1rem;
+.header {
+    height: 95vh;
 }

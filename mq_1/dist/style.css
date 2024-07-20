@@ -14,6 +14,13 @@
 
 1800px + :      PC
 */
+/*
+$breakpoint arguement chices
+- Phone
+- tap-port
+- tab-land
+- big-desktop
+*/
 *,
 *::after,
 *::before {
@@ -45,6 +52,13 @@ body {
 1200 - 1800px: Is where our normal styles
 
 1800px + :      PC
+*/
+/*
+$breakpoint arguement chices
+- Phone
+- tap-port
+- tab-land
+- big-desktop
 */
 
 /*# sourceMappingURL=style.css.map*/

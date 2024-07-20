@@ -12,8 +12,9 @@
 
 html {
     font-size: 62.5%;
-        @include    mixin.respond-phone{
-            font-size: 50%;
+
+    @include mixin.respond(phone){
+        font-size: 50%;
     }
     
 }

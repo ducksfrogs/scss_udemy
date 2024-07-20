@@ -1,1 +1,0 @@
-{"version":3,"file":"./main.js","mappings":"mBAEAA,QAAQC,IAAI,gB","sources":["webpack://bs_advanced/./src/js/main.js"],"sourcesContent":["import '../style/styles.scss';\n\nconsole.log('hello webpack');"],"names":["console","log"],"sourceRoot":""}

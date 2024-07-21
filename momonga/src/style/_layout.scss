@@ -12,14 +12,24 @@
     background-color: #fff;
     border-bottom: var(--color-gray-light-2);
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
 }
 
 .sidebar {
     background-color: var(--color-gray-dark-1);
 
+    flex: 0 0 18%;
 }
 
 .hotel-view {
     background-color: #fff;
+    background-color: orange;
 
+    flex: 1;
 }

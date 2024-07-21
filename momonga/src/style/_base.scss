@@ -1,0 +1,36 @@
+/* colors
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA26
+
+Gray light1: #faf9f9
+Gray light2: #f4f2f2
+Gray light3: #f0eee
+
+Gray dark 1: #333
+Gray dark 2: #777
+Gray dark 3: #999
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}

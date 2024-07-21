@@ -78,5 +78,25 @@
 /// 
 
 .side-nav {
+    &__item {
+
+    }
     
+    &__link {
+
+    }
+
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+
+    }
+}
+
+.leagal {
+    font-size: 1.2rem;
+    color: var(--color-gray-light-4);
+    text-align: center;
+    padding: 2.5rem;
+
 }

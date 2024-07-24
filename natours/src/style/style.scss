@@ -1,3 +1,4 @@
+@import "main";
 @import "abstracts/valiables";
 @import "abstracts/mixins";
 
@@ -6,8 +7,8 @@
 @import "pages/home";
 
 @import "base/typographiy";
+@import "base/utilities";
 
-@import "main";
 @import 'first';
 
 @import 'layout/grid';

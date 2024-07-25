@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    
+
+
+    @include respond-tabL {
+        font-size: 56.25%; // 1rem = 9px, 9/16 =
+    }
+
+    @include respond-tabP {
+        font-size: 50%; //1rem = 8px, 8/16 = 50%
+    }
+
+    @include respond-big-pc {
+        font-size: 75%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+
+}

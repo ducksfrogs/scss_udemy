@@ -9,19 +9,17 @@
 html {
     font-size: 62.5%;
     
-
-
-    @include respond-tabL {
-        font-size: 56.25%; // 1rem = 9px, 9/16 =
+    @include respond(tab-land) {
+        font-size: 60%;
     }
 
-    @include respond-tabP {
-        font-size: 50%; //1rem = 8px, 8/16 = 50%
+    @include respond(tab-prot) {
+        font-size: 50%;
     }
-
-    @include respond-big-pc {
+    @include respond(big-desktop) {
         font-size: 75%;
     }
+
 }
 
 body {

@@ -5,30 +5,6 @@
         clear: both;
     }
 }
-
-@mixin respond-phone {
-    @media screen  and (max-width: 37.5em) {
-        @content;
-    }
-}
-
-@mixin respond-tabP {
-    @media screen and (max-width: 56.25em) {
-        @content; 
-    }
-}
-
-@mixin respond-tabL {
-    @media screen and (max-width: 75em) {
-        @content;
-    }
-}
-
-@mixin respond-big-pc {
-    @media screen and (min-width: 112.5em) {
-        @content;
-    }
-}
 /*
 $breakpoint argument choices:
 - phone

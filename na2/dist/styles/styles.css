@@ -11,6 +11,32 @@ $breakpoint argument choices:
 1200 - 1800px: is where normal style
 1800px + : Big desktop0 - 600px: phone
 */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 *,
 *::after,
 *::before {
@@ -42,6 +68,11 @@ body {
   box-sizing: border-box;
   padding: 3rem;
 }
+@media screen and (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
 
 .section-about {
   background-color: #f7f7f7;
@@ -70,6 +101,37 @@ body {
 .section-stories {
   padding: 15rem 0;
   position: relative;
+}
+
+body {
+  color: #777;
+  font-family: "Lato", "sans-serif";
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 3rem;
+}
+
+.heading-primary {
+  backface-visibility: hidden;
+  color: #fff;
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+}
+.heading-primary--main {
+  animation-duration: 1s;
+  animation-name: moveInLeft;
+  animation-timing-function: ease-out;
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+}
+.heading-primary--sub {
+  animation: moveInRight 1s ease-in-out;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
 }
 
 .heading-secondary {
@@ -115,6 +177,31 @@ body {
 
 .u-margin-bottom-2 {
   margin-bottom: 2rem;
+}
+
+.header {
+  background-image: linear-gradient(to left, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.7)), url(../img/hero.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 95vh;
+  position: relative;
+  --webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.header__logo-box {
+  left: 4rem;
+  position: absolute;
+  top: 4rem;
+}
+.header__logo {
+  height: 3.5rem;
+}
+.header__text-box {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  transform: translate(-50%, -50%);
 }
 
 .btn-text:link, .btn-text:visited {
